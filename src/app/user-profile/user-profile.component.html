@@ -1,0 +1,9 @@
+<div class="fiche">
+    <img src={{photo}}>
+    <h2>Nom : {{name}}</h2>
+    <h2>Prénom : {{firstName}}</h2>
+    <h2 [hidden]="isAgeHidden">Age : {{age}}</h2>
+    <h3>{{quote}}</h3>
+    <input type="text" [(ngModel)]="quote">
+    <button (click)="ageHidden()">Afficher/ Masquer mon âge</button>
+</div>
